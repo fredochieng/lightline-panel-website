@@ -1,0 +1,122 @@
+.get-in-touch-inner-box {
+    border-radius: 25px;
+    background: {
+        image: url(../../../../assets/img/cybersecurity-home/get-in-touch-bg.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        left: 80px;
+        right: 80px;
+    };
+}
+.get-in-touch-form {
+    .form-group {
+        margin-bottom: 25px;
+
+        label {
+            color: var(--whiteColor);
+            display: inline-block;
+            margin-bottom: 8px;
+            font: {
+                size: var(--fontSize);
+                weight: 500;
+            };
+        }
+        .form-control {
+            display: inline-block;
+            height: 55px;
+            border-radius: 8px;
+            color: var(--blackColor);
+            border: 1px solid var(--whiteColor);
+            background-color: var(--whiteColor);
+            outline: 0;
+            box-shadow: unset;
+            transition: var(--transition);
+            
+            &::placeholder {
+                color: var(--blackColor);
+            }
+            &:focus {
+                background-color: transparent !important;
+                color: var(--whiteColor);
+                border: 1px solid var(--mainColor) !important;
+            }
+        }
+    }
+    .get-in-touch-btn {
+        text-align: center;
+        margin-top: 10px;
+
+        button {
+            display: inline-block;
+            padding: 15px 38px;
+            border: none;
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+            border-radius: 5px;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            font: {
+                size: var(--fontSize);
+                weight: 400;
+            };
+            &:hover {
+                background-color: #1F5692;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .get-in-touch-inner-box {
+        border-radius: 5px;
+        padding: {
+            left: 15px;
+            right: 15px;
+        };
+    }
+    .get-in-touch-form {
+        .form-group {
+            margin-bottom: 20px;
+
+            .form-control {
+                height: 50px;
+            }
+        }
+        .get-in-touch-btn {
+            button {
+                padding: 12px 30px 14px;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .get-in-touch-inner-box {
+        padding: {
+            left: 30px;
+            right: 30px;
+        };
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

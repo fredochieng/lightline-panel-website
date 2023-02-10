@@ -1,0 +1,263 @@
+.about-area {
+    position: relative;
+    z-index: 1;
+
+    &.bg-gradient-image {
+        background: {
+            image: url(../../../../assets/img/bg/bg2.jpg);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+}
+.about-image {
+    z-index: 1;
+    text-align: center;
+    padding-right: 15px;
+    position: relative;
+
+    img {
+        animation: border-transform 10s linear infinite alternate forwards;
+    }
+}
+.about-content {
+    padding-left: 15px;
+
+    .sub-title {
+        background-color: rgba(2, 152, 148, .15);
+        transition: var(--transition);
+        color: var(--mainColor);
+        display: inline-block;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        padding: 4px 30px;
+        font: {
+            size: 14px;
+            weight: 300;
+        };
+        &:hover {
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+        }
+    }
+    h2 {
+        margin-bottom: 10px;
+        font: {
+            size: 40px;
+            weight: 400;
+            family: var(--fontFamily2);
+        };
+    }
+    p {
+        max-width: 520px;
+    }
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style-type: none;
+        margin: {
+            bottom: 0;
+            top: -15px;
+            left: -15px;
+            right: -15px;
+        };
+        li {
+            margin-top: 30px;
+            flex: 0 0 auto;
+            width: 50%;
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+            .icon {
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                border-radius: 5px;
+                text-align: center;
+                transition: var(--transition);
+                background-color: var(--whiteColor);
+            }
+            span {
+                display: block;
+                margin-left: 20px;
+                font: {
+                    size: 24px;
+                    weight: 600;
+                };
+            }
+            &:hover {
+                .icon {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .default-btn {
+        margin-top: 30px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .about-image {
+        padding-right: 0;
+    }
+    .about-content {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 30px;
+
+        .sub-title {
+            padding: 3px 15px;
+            font-size: 12px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .features-list {
+            margin: {
+                left: -10px;
+                right: -10px;
+            };
+            li {
+                padding: {
+                    left: 10px;
+                    right: 10px;
+                };
+                .d-flex {
+                    display: block !important;
+                }
+                .icon {
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    margin: {
+                        left: auto;
+                        right: auto;
+                        bottom: 15px;
+                    };
+                    img {
+                        width: 45px;
+                    }
+                }
+                span {
+                    margin-left: 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .about-content {
+        .features-list {
+            li {
+                width: 25%;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .about-image {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .about-content {
+        padding-left: 0;
+        text-align: center;
+
+        .sub-title {
+            padding: 4px 20px;
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            max-width: 540px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+        .features-list {
+            li {
+                width: 25%;
+
+                .d-flex {
+                    display: block !important;
+
+                    .icon {
+                        border-radius: 50%;
+                        margin: {
+                            left: auto;
+                            right: auto;
+                        };
+                    }
+                    span {
+                        font-size: 20px;
+                        margin: {
+                            left: 0;
+                            top: 15px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .about-image {
+        padding-right: 0;
+    }
+    .about-content {
+        padding-left: 0;
+
+        h2 {
+            font-size: 36px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .features-list {
+            li {
+                .icon {
+                    width: 77px;
+                    height: 77px;
+                    line-height: 77px;
+                }
+                span {
+                    margin-left: 15px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

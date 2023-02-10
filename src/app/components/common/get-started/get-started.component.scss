@@ -1,0 +1,208 @@
+.get-started-area {
+    &.bg-gradient-image {
+        background: {
+            image: url(../../../../assets/img/bg/bg3.jpg);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+    &.bg-main-color {
+        background-color: var(--mainColor);
+    }
+}
+.get-started-image {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        left: 0;
+        right: 0;
+        content: '';
+        opacity: .36;
+        width: 590px;
+        z-index: -1;
+        bottom: -50px;
+        height: 590px;
+        position: absolute;
+        background-color: var(--whiteColor);
+        animation: border-transform 10s linear infinite alternate forwards;
+    }
+}
+.get-started-content {
+    padding-top: 60px;
+
+    .sub-title {
+        background-color: rgba(2, 152, 148, .15);
+        transition: var(--transition);
+        color: var(--mainColor);
+        display: inline-block;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        padding: 4px 30px;
+        font: {
+            size: 14px;
+            weight: 300;
+        };
+        &:hover {
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+        }
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-size: 60px;
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+    &.white-color {
+        .sub-title {
+            background-color: rgba(255, 255, 255, .15);
+            color: var(--whiteColor);
+        }
+        h2 {
+            color: var(--whiteColor);
+        }
+        p {
+            color: var(--whiteColor);
+        }
+        .default-btn {
+            &.style-two {
+                background-color: var(--whiteColor);
+                color: var(--mainColor);
+                
+                span {
+                    color: var(--mainColor);
+                }
+                &:hover {
+                    background-color: var(--blackColor);
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .get-started-area {
+        .col-lg-6 {
+            &:first-child {
+                order: 2;
+            }
+            &:last-child {
+                order: 1;
+            }
+        }
+    }
+    .get-started-content {
+        padding-top: 0;
+        text-align: center;
+
+        .sub-title {
+            margin-bottom: 12px;
+            padding: 3px 15px;
+            font-size: 12px;
+        }
+        h2 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .get-started-image {
+        margin-top: 30px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .get-started-area {
+        .col-lg-6 {
+            &:first-child {
+                order: 2;
+            }
+            &:last-child {
+                order: 1;
+            }
+        }
+    }
+    .get-started-content {
+        padding-top: 0;
+        text-align: center;
+
+        .sub-title {
+            padding: 4px 20px;
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 32px;
+
+            br {
+                display: none !important;
+            }
+        }
+        p {
+            max-width: 540px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .get-started-image {
+        margin-top: 30px;
+
+        &::before {
+            margin: 0 auto;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .get-started-image {
+        &::before {
+            width: 450px;
+            height: 450px;
+        }
+    }
+    .get-started-content {
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

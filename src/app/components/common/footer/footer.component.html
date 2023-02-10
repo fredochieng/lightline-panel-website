@@ -1,0 +1,127 @@
+<!-- Default Footer -->
+<div
+    [ngClass]="{'d-none': router.url === '/index-5'}"
+>
+    <footer
+        class="footer-area"
+        [ngClass]="{'bg-black': router.url === '/home' || router.url === '/index-6'}"
+    >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                    <div class="single-footer-widget">
+                        <a
+                            routerLink="/"
+                            class="d-inline-block logo"
+                            [ngClass]="{'d-none': router.url === '/home' || router.url === '/index-6'}"
+                        >
+                            <img src="assets/img/logo.png" alt="logo">
+                        </a>
+                        <a
+                            routerLink="/"
+                            class="logo d-none"
+                            [ngClass]="{'custom-opacity': router.url === '/home' || router.url === '/index-6'}"
+                        >
+                            <img src="assets/img/logo.png" alt="logo">
+                        </a>
+                        <div class="newsletter-form">
+                            <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                            <form>
+                                <input type="email" class="input-newsletter" placeholder="Enter your email" name="email" required>
+                                <button type="submit">Subscribe Now <i class="ri-send-plane-line"></i></button>
+                            </form>
+                        </div>
+                        <ul class="social-links">
+                            <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Quick Links</h3>
+                        <ul class="services-links">
+                            <li><a routerLink="/services">Terms & Conditions</a></li>
+                            <li><a routerLink="/services">Privacy Policy</a></li>
+                            <li><a routerLink="/services">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-footer-widget pl-5">
+                        <h3>Quick Links</h3>
+                        <ul class="quick-links">
+                            <li><a routerLink="/">Home</a></li>
+                            <li><a routerLink="/about-us">About Us</a></li>
+                            <li><a routerLink="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Contact Info</h3>
+                        <ul class="footer-contact-info">
+                            <li><strong>Email</strong>: <a href="mailto:hello@onux.com">info@lightlineresearch.com</a></li>
+                            <li><strong>Phone</strong>: <a href="tel:+44587154756">+254 722 314 967</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-6 col-md-6">
+                        <p><strong>Copyright <i class="ri-copyright-line"></i> 2022 Lightline Research. All rights reserved</strong></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6">
+                        <ul>
+                            <li><a routerLink="/privacy-policy">Privacy Policy</a></li>
+                            <li><a routerLink="/terms-conditions">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Footer for Home Demo - 5 -->
+<footer
+    class="footer-style-wrap-area d-none"
+    [ngClass]="{'d-block': router.url === '/index-5'}"
+>
+    <div class="container">
+        <div class="footer-widget-style-wrap">
+            <a routerLink="/" class="d-inline-block logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </a>
+            <ul class="quick-links">
+                <li><a routerLink="/">Home</a></li>
+                <li><a routerLink="/about-us">About Us</a></li>
+                <li><a routerLink="/work-style-1">Case Studies</a></li>
+                <li><a routerLink="/blog">Our News</a></li>
+                <li><a routerLink="/contact">Contact Us</a></li>
+                <li><a routerLink="/pricing">Pricing</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-pinterest-line"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-skype-line"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-youtube-line"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-github-fill"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-gitlab-fill"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <p><i class="ri-copyright-line"></i> <strong>Lightline Research</strong> is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+        </div>
+    </div>
+</footer>
