@@ -89,7 +89,7 @@
                              <a class="nav-link"  (click)="goDown1()">About</a>
     
                             <<a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a> -->
-                        <!-- </li>
+<!-- </li>
                         <li class="nav-item">
                             <a routerLink="/team" class="nav-link" routerLinkActive="active"
                                 [routerLinkActiveOptions]="{exact: true}">Team</a>
@@ -124,11 +124,12 @@
         </nav>
     </div>
 
-</header> --> 
+</header> -->
 
 
 <!-- Varbar for Lightline research website-->
-<header class="header-area  header-style-three d-none" [ngClass]="{'d-block': router.url === '/' || router.url === '/#about'}">
+<header class="header-area  header-style-three d-none"
+    [ngClass]="{'d-block': router.url === '/' || router.url === '/#about'}">
 
     <div class="top-header-black-area">
         <div class="container-fluid">
@@ -181,42 +182,50 @@
                                 [routerLinkActiveOptions]="{exact: true}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="/" fragment="about" class="nav-link" routerLinkActive="active"
+                            <a routerLink="/" class="nav-link" routerLinkActive=""
                                 [routerLinkActiveOptions]="{exact: false}">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" (click)="goDown1()" routerLinkActive="active"
-                                [routerLinkActiveOptions]="{exact: true}">Contact Us</a>
+                            <a routerLink="/" class="nav-link" routerLinkActive=""
+                                [routerLinkActiveOptions]="{exact: false}">Contact Us</a>
                         </li>
+
 
                     </ul>
                     <ul class="navbar-nav for-responsive">
-
                         <li class="nav-item">
-                            <a routerLink="/about-us" class="nav-link" routerLinkActive="active"
-                                [routerLinkActiveOptions]="{exact: true}">About Us</a>
+                            <a routerLink="/" class="nav-link" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{exact: true}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" (click)="goDown1()" routerLinkActive="active"
-                                [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact</a>
+                            <a routerLink="/" class="nav-link" routerLinkActive=""
+                                [routerLinkActiveOptions]="{exact: false}">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/" class="nav-link" routerLinkActive=""
+                                [routerLinkActiveOptions]="{exact: false}">Contact Us</a>
                         </li>
                     </ul>
                     <div class="others-option">
-                        <a routerLink="/contact" class="default-btn style-two">
-                            Sign In
+                        <a href="/http://localhost:8000/auth/user/login" class="default-btn style-two">
+                            <span _ngcontent-bdg-c91="" class="ri-login-circle-fill"></span>
+                            Login
                         </a>
                     </div>
                     <div class="others-option">
-                        <a routerLink="/contact" class="default-btn style-two">
+                        <a href="/http://localhost:8000/auth/user/register" class="default-btn style-two">
+                            <span _ngcontent-bdg-c91="" class="ri-folder-user-fill"></span>
                             Register
                         </a>
                     </div>
                     <div class="others-option for-responsive">
-                        <a routerLink="/contact" class="default-btn" (click)="toggleClass()">
-                            Sign In
+                        <a href="/http://localhost:8000/auth/user/login" class="default-btn style-two">
+                            <span _ngcontent-bdg-c91="" class="ri-login-circle-fill"></span>
+                            Login
                         </a>
-                        <a routerLink="/contact" class="default-btn style-two" (click)="toggleClass()">
-                            Sign Up
+                        <a href="/http://localhost:8000/auth/user/register" class="default-btn style-two">
+                            <span _ngcontent-bdg-c91="" class="ri-folder-user-fill"></span>
+                            Register
                         </a>
                     </div>
                 </div>
