@@ -1,0 +1,232 @@
+.single-funfacts-box {
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 35px rgba(0, 0, 0, .07);
+    padding: {
+        top: 15px;
+        left: 120px;
+        right: 15px;
+        bottom: 20px;
+    };
+    margin: {
+        bottom: 30px;
+        top: 17px;
+    };
+    .icon {
+        left: 15px;
+        width: 85px;
+        bottom: 20px;
+        height: 100px;
+        font-size: 45px;
+        position: absolute;
+        border-radius: 5px;
+        text-align: center;
+        color: var(--whiteColor);
+        background-color: var(--mainColor);
+
+        i {
+            top: 50%;
+            left: 0;
+            right: 0;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+        &.bg-4D69FF {
+            background-color: #4D69FF;
+        }
+        &.bg-FFC23B {
+            background-color: #FFC23B;
+        }
+        &.bg-00A4C8 {
+            background-color: #00A4C8;
+        }
+    }
+    h3 {
+        margin-bottom: 5px;
+        line-height: 1;
+        font: {
+            size: 32px;
+            weight: 700;
+            family: var(--fontFamily2);
+        };
+    }
+    p {
+        line-height: initial;
+        font-weight: 500;
+    }
+}
+.funfacts-style-inner-box {
+    border-radius: 25px;
+    background: {
+        image: url(../../../../assets/img/cybersecurity-home/funfact-bg.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        left: 30px;
+        right: 30px;
+    };
+}
+.single-funfact-card {
+    margin-bottom: 30px;
+    text-align: center;
+
+    h3 {
+        line-height: 1;
+        margin-bottom: 8px;
+        color: var(--whiteColor);
+        font: {
+            size: 72px;
+            weight: 600;
+        };
+        .small-text {
+            font-size: 65px;
+        }
+        .small-icon {
+            top: -6px;
+            font-size: 65px;
+            position: relative;
+        }
+    }
+    p {
+        letter-spacing: 1px;
+        line-height: initial;
+        color: var(--whiteColor);
+        font: {
+            weight: 600;
+            size: 18px;
+        };
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .single-funfacts-box {
+        padding: 0;
+        margin-top: 0;
+        box-shadow: unset;
+        text-align: center;
+        background-color: transparent;
+
+        .icon {
+            position: relative;
+            font-size: 35px;
+            height: 75px;
+            width: 75px;
+            bottom: 0;
+            left: 0;
+            margin: {
+                left: auto;
+                right: auto;
+                bottom: 20px;
+            };
+        }
+    }
+    .funfacts-style-inner-box {
+        padding: {
+            left: 15px;
+            right: 15px;
+            bottom: 40px;
+        };
+    }
+    .single-funfact-card {
+        margin-bottom: 20px;
+
+        h3 {
+            font-size: 35px;
+            margin-bottom: 5px;
+
+            .small-text {
+                font-size: 30px;
+            }
+            .small-icon {
+                font-size: 30px;
+                top: -3px;
+            }
+        }
+        p {
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .funfacts-style-inner-box {
+        padding: {
+            left: 15px;
+            right: 15px;
+        };
+    }
+    .single-funfact-card {
+        h3 {
+            font-size: 45px;
+            margin-bottom: 8px;
+
+            .small-text {
+                font-size: 42px;
+            }
+            .small-icon {
+                font-size: 50px;
+                top: 0;
+            }
+        }
+        p {
+            font-size: 15px;
+            letter-spacing: 0;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .single-funfact-card {
+        h3 {
+            font-size: 55px;
+
+            .small-text {
+                font-size: 50px;
+            }
+            .small-icon {
+                font-size: 50px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .single-funfacts-box {
+        padding: {
+            left: 100px;
+            right: 10px;
+        };
+        .icon {
+            left: 10px;
+            width: 75px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,265 @@
+.quote-area {
+    z-index: 2;
+    position: relative;
+    background-color: var(--mainColor);
+    padding: {
+        top: 150px;
+        bottom: 100px;
+    };
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        z-index: -1;
+        height: 74px;
+        position: absolute;
+        background: {
+            image: url(../../../../assets/img/shape/top-shape1.png);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+}
+.quote-content {
+    text-align: center;
+
+    .sub-title {
+        background-color: rgba(255, 255, 255, .10);
+        transition: var(--transition);
+        color: var(--whiteColor);
+        display: inline-block;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        padding: 4px 25px;
+        font: {
+            size: 14px;
+            weight: 300;
+        };
+        &:hover {
+            background-color: var(--whiteColor);
+            color: var(--mainColor);
+        }
+    }
+    h2 {
+        margin-bottom: 10px;
+        color: var(--whiteColor);
+        font: {
+            size: 40px;
+            weight: 400;
+            family: var(--fontFamily2);
+        };
+        span {
+            color: var(--mainColor);
+        }
+    }
+    p {
+        color: var(--whiteColor);
+        opacity: .9;
+    }
+    form {
+        max-width: 720px;
+        margin: {
+            top: 30px;
+            left: auto;
+            right: auto;
+        };
+        .pr-0 {
+            padding-right: 0;
+        }
+        .pl-0 {
+            padding-left: 0;
+        }
+        .col-lg-6 {
+            .form-group {
+                border-right: none;
+            }
+        }
+        .form-group {
+            border-right: 1px solid #598382;
+
+            .form-control {
+                height: 50px;
+                font-size: 15px;
+                padding-left: 15px;
+                color: var(--whiteColor);
+                background-color: rgba(0, 0, 0, .36) !important;
+
+                &::placeholder {
+                    color: var(--whiteColor);
+                    transition: var(--transition);
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+        }
+        button {
+            background-color: var(--whiteColor);
+            transition: var(--transition);
+            color: var(--mainColor);
+            position: relative;
+            border-radius: 5px;
+            border: none;
+            height: 50px;
+            padding: {
+                left: 32px;
+                right: 52px;
+            };
+            font: {
+                family: var(--fontFamily2);
+                size: var(--fontSize);
+                weight: 500;
+            };
+            i {
+                transform: translateY(-50%);
+                position: absolute;
+                font-size: 25px;
+                right: 25px;
+                top: 50%;
+            }
+            &:hover {
+                color: var(--whiteColor);
+                background-color: var(--blackColor);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .quote-area {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+        &::before {
+            display: none;
+        }
+    }
+    .quote-content {
+        .sub-title {
+            margin-bottom: 12px;
+            padding: 3px 15px;
+            font-size: 12px;
+        }
+        h2 {
+            font-size: 25px;
+
+            br {
+                display: none !important;
+            }
+        }
+        form {
+            max-width: 100%;
+            margin-top: 20px;
+
+            .pr-0 {
+                padding-right: calc(var(--bs-gutter-x)/ 2);
+            }
+            .pl-0 {
+                padding-left: calc(var(--bs-gutter-x)/ 2);
+            }
+            .form-group {
+                margin-bottom: 15px;
+
+                .form-control {
+                    height: 45px;
+                    font-size: 14px;
+                }
+            }
+            button {
+                height: auto;
+                font-size: 14px;
+                padding: {
+                    top: 11px;
+                    left: 32px;
+                    right: 52px;
+                    bottom: 10px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .quote-area {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        };
+        &::before {
+            display: none;
+        }
+    }
+    .quote-content {
+        .sub-title {
+            padding: 4px 20px;
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 32px;
+
+            br {
+                display: none !important;
+            }
+        }
+        p {
+            max-width: 540px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+        form {
+            max-width: 100%;
+            margin-top: 25px;
+
+            .form-group {
+                .form-control {
+                    font-size: 14px;
+                    height: 45px;
+                }
+            }
+            button {
+                height: 45px;
+                font-size: 15px;
+                padding: {
+                    left: 30px;
+                    right: 50px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .quote-area {
+        padding-top: 120px;
+
+        &::before {
+            height: 40px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

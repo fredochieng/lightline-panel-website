@@ -1,0 +1,253 @@
+.contact-us-inner-box {
+    background: #F4F6FB;
+    border-radius: 25px;
+    padding: {
+        top: 70px;
+        left: 70px;
+        right: 70px;
+        bottom: 70px;
+    };
+    .contact-form-wrap {
+        padding-right: 20px;
+
+        h2 {
+            margin-bottom: 25px;
+            font: {
+                size: 38px;
+                weight: 500;
+            };
+        }
+        .form-group {
+            margin-bottom: 25px;
+
+            .form-control {
+                background-color: var(--whiteColor) !important;
+                border: 1px solid #E5E5E5 !important;
+                border-radius: 10px;
+                color: var(--blackColor) !important;
+                padding: 15px 25px;
+                transition: var(--transition);
+
+                &::placeholder {
+                    color: var(--optionalColor) !important;
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent !important;
+                    }
+                }
+            }
+            textarea {
+                &.form-control {
+                    min-height: 115px;
+                }
+            }
+        }
+    }
+    .get-in-touch-information {
+        background-color: var(--whiteColor);
+        padding: 65px 50px 120px;
+        border-radius: 25px;
+        position: relative;
+        margin-left: 20px;
+        z-index: 1;
+
+        h4 {
+            margin-bottom: 25px;
+            font: {
+                size: 30px;
+                weight: 500;
+            };
+        }
+        .information-list {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            li {
+                color: var(--optionalColor);
+                position: relative;
+                padding-left: 32px;
+                margin-bottom: 18px;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    color: var(--optionalColor);
+                    display: block;
+    
+                    &:hover {
+                        color: var(--mainColor);
+                    }
+                }
+                i {
+                    color: var(--mainColor);
+                    font-size: 20.5px;
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                }
+                span {
+                    color: var(--blackColor);
+                    font-weight: 600;
+                }
+            }
+        }
+        .get-in-touch-shape {
+            position: absolute;
+            right: 10px;
+            bottom: 15px;
+            z-index: -1;
+        }
+    }
+    &.with-black-color {
+        background-color: #131A34;
+
+        .contact-form-wrap {
+            h2 {
+                background: linear-gradient(291.68deg, #31E7FF -3.27%, #A7FFE2 124.69%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .form-group {
+                .form-control {
+                    background: #081327 !important;
+                    border: 1px solid #1b223c !important;
+                    border-radius: 5px;
+                    color: var(--whiteColor) !important;
+    
+                    &::placeholder {
+                        color: var(--whiteColor) !important;
+                    }
+                    &:focus {
+                        &::placeholder {
+                            color: transparent !important;
+                        }
+                    }
+                }
+            }
+        }
+        .get-in-touch-information {
+            background-color: #1B223C;
+
+            h4 {
+                background: linear-gradient(291.68deg, #31E7FF -3.27%, #A7FFE2 124.69%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .information-list {
+                li {
+                    color: var(--whiteColor);
+                    
+                    a {
+                        color: var(--whiteColor);
+        
+                        &:hover {
+                            color: var(--mainColor);
+                        }
+                    }
+                    span {
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .contact-us-inner-box {
+        padding: 40px 15px;
+        border-radius: 10px;
+
+        .contact-form-wrap {
+            padding-right: 0;
+
+            h2 {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+        }
+        .get-in-touch-information {
+            padding: 20px;
+            border-radius: 10px;
+            margin: {
+                top: 30px;
+                left: 0;
+            };
+            h4 {
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+            .get-in-touch-shape {
+                display: none;
+            }
+        }        
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .contact-us-inner-box {
+        padding: 35px 20px;
+
+        .contact-form-wrap {
+            padding-right: 0;
+
+            h2 {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+        }
+        .get-in-touch-information {
+            padding: 20px;
+            margin: {
+                top: 30px;
+                left: 0;
+            };
+            h4 {
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+            .get-in-touch-shape {
+                display: none;
+            }
+        }        
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .contact-us-inner-box {
+        padding: {
+            left: 30px;
+            right: 30px;
+        };
+        .get-in-touch-information {
+            margin-left: 0;
+            padding: 30px 25px 75px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
